@@ -6,7 +6,7 @@ enum obj { dragon, hero, wolf, tree, deer, bush };
 
 class Dragon : public Object
 {
-private:
+protected:
 	
 	int power;
 	int health;
@@ -27,7 +27,7 @@ public:
 
 	int GetHealth()
 	{
-		return power;
+		return health;
 	}
 
 	void SetPower(int power)
@@ -267,7 +267,7 @@ public:
 
 class Hero : public Object
 {
-private:
+protected:
 
 	int power;
 	int health;
@@ -288,7 +288,7 @@ public:
 
 	int GetHealth()
 	{
-		return power;
+		return health;
 	}
 
 	void SetPower(int power)
@@ -417,7 +417,7 @@ public:
 
 class Wolf : public Object
 {
-private:
+protected:
 
 	int power;
 	int health;
@@ -438,7 +438,7 @@ public:
 
 	int GetHealth()
 	{
-		return power;
+		return health;
 	}
 
 	void SetPower(int power)
@@ -466,8 +466,7 @@ public:
 
 class Tree : public Object
 {
-private:
-
+protected:
 	int power;
 	int health;
 
@@ -487,7 +486,7 @@ public:
 
 	int GetHealth()
 	{
-		return power;
+		return health;
 	}
 
 	void SetPower(int power)
@@ -515,7 +514,7 @@ public:
 
 class Deer : public Object
 {
-private:
+protected:
 
 	int power;
 	int health;
@@ -536,7 +535,7 @@ public:
 
 	int GetHealth()
 	{
-		return power;
+		return health;
 	}
 
 	void SetPower(int power)
@@ -564,7 +563,7 @@ public:
 
 class Bush: public Object
 {
-private:
+protected:
 
 	int power;
 	int health;
@@ -585,7 +584,7 @@ public:
 
 	int GetHealth()
 	{
-		return power;
+		return health;
 	}
 
 	void SetPower(int power)

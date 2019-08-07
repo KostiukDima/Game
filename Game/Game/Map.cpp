@@ -7,11 +7,9 @@ Map::Map()
 	col = 20;
 	row = 20;
 
-	int tmp;
-
 	map.resize(col, std::vector<Object*>(row));
-
-
+	   	  
+	int tmp;
 	for (int i = 0; i < row; ++i)
 	{
 		for (int j = 0; j < col; ++j)
@@ -66,6 +64,26 @@ Map::~Map()
 				delete map[i][j];
 		}
 	}
+}
+
+Map & Map::operator=(Map && other)
+{
+	this->col = other.col;
+	this->row = other.row;
+	for (int i = 0; i < row; ++i)
+	{
+		for (int j = 0; j < col; ++j)
+		{
+			if (map[i][j] != nullptr)
+			{
+				this->map[i][j] = other.map[i][j];
+				other.map[i][j] = nullptr;
+			}
+			
+		}
+	}
+
+	return *this;
 }
 
 void Map::Print()

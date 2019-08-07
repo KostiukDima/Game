@@ -8,7 +8,7 @@ using namespace std;
 
 class Map
 {
-private:
+protected:
 
 	int col, row;
 
@@ -17,9 +17,10 @@ private:
 public:
 
 	Map();
-
 	~Map();
+	Map &operator = ( Map && other);
 
 	void Print();
 
+	
 };

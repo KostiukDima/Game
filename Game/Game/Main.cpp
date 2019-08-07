@@ -1,16 +1,16 @@
 #include"Hero.h"
 #include<iostream>
 
-#include"Map.h"
+#include"Game.h"
 using namespace std;
 
 
 
 int main()
 {
-	 Map d;
+	 Game game;
 
-	d.Print();
+	 game.Ran();
 
 	
 
