@@ -1,8 +1,21 @@
 #pragma once
-#include"Object.h"
 
+class Resource
+{
 
-class Gold : public Object
+public:
+
+	Resource(){}
+
+	virtual int GetCount() = 0;	
+
+	virtual void SetCount(int  count) = 0;
+
+	virtual void Print() = 0;
+	
+};
+
+class Gold : Resource
 {
 private:
 
@@ -10,7 +23,7 @@ private:
 	
 public:
 
-	Gold() : Object()
+	Gold() :Resource()
 	{
 		count = 0;
 	}
@@ -31,7 +44,7 @@ public:
 	}
 };
 
-class Stone : public Object
+class Food :Resource
 {
 private:
 
@@ -39,7 +52,7 @@ private:
 
 public:
 
-	Stone() : Object()
+	Food() :Resource()
 	{
 		count = 0;
 	}
@@ -60,7 +73,7 @@ public:
 	}
 };
 
-class Desk : public Object
+class Desk :Resource
 {
 private:
 
@@ -68,7 +81,7 @@ private:
 
 public:
 
-	Desk() : Object()
+	Desk() :Resource()
 	{
 		count = 0;
 	}

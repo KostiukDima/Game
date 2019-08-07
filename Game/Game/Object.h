@@ -16,11 +16,9 @@ public:
 	
 	virtual void SetHealth(int health) = 0;
 	
-	virtual	void Print() = 0;
+	virtual	void Print(int, int) = 0;
+	 
+	virtual int WhoAmI() = 0;
 
-	virtual int GetCount() = 0;
-	
-	virtual void SetCount(int  count) = 0;
-	
 };
 
