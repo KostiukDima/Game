@@ -1,53 +1,52 @@
 #pragma once
-#include"Resource.h"
-#include<vector>
 
 using namespace std;
-
-enum resource {gold, food, desk };
-
 
 class Bag
 {
 private:
 	
-	vector<Resource> bag;
+	int gold;
+	int food;
+	int desk;
 
 public:
 
-	Bag()
+	Bag()		
 	{
-		bag.reserve(3);
+		 gold=0;
+		 food=0;
+		 desk=0;
 	}
 
 	void SetGold(int count)
 	{
-		bag[gold].SetCount(count);
+		gold = count;
 	}
 
 	void SetFood(int count)
 	{
-		bag[food].SetCount(count);
+		food = count;
 	}
 	
 	void SetDesk(int count)
 	{
-		bag[desk].SetCount(count);
+		desk=count;
 	}
 
 	int GetGold()
 	{
-		return bag[gold].GetCount();
+		return gold;
 	}
 
-	int GetFood(int count)
+	int GetFood()
 	{
-		return bag[food].GetCount();
+		return food;
 	}
 
-	int GetDesk(int count)
+	int GetDesk()
 	{
-		return bag[desk].GetCount();
+		return desk;
 	}
 
 };

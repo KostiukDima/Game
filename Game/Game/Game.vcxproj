@@ -121,7 +121,6 @@
     <ClInclude Include="Line.h" />
     <ClInclude Include="Map.h" />
     <ClInclude Include="Object.h" />
-    <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Line.cpp" />
