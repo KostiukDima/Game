@@ -1,19 +1,11 @@
-#include"Hero.h"
 #include<iostream>
-
 #include"Game.h"
-using namespace std;
-
-
 
 int main()
 {
-	 Game game;
+	Game game;
 
-	 game.Ran();
+	game.Ran();
 
-	
-
-	system("pause");
 	return 0;
 }
